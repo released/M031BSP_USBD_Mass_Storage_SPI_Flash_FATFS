@@ -23,7 +23,13 @@ update @ 2023/02/06
 
 	- ex : W25Q32JV ( 32MBit = 4MB ) , modify SPI_FLASH_STORAGE_SIZE to (4*1024*1024)
 
-4. use UART terminal , digit ( 1 ~ 6 ) , to test FATFS function
+4. under KEIL > OPTION , TAB : arm
+
+set stack size to 0x800 and heap size to 0x100
+
+![image](https://github.com/released/M031BSP_USBD_Mass_Storage_SPI_Flash_FATFS/blob/main/keil_option.jpg)
+
+5. use UART terminal , digit ( 1 ~ 6 ) , to test FATFS function
 
 	- digit 1 , 2: create file and write data into file
 	
@@ -33,7 +39,7 @@ update @ 2023/02/06
 	
 	- digit 6 : erase SPI flash
 	
-5. below is log capture 
+6. below is log capture 
 
 ![image](https://github.com/released/M031BSP_USBD_Mass_Storage_SPI_Flash_FATFS/blob/main/noram_power_on.jpg)
 
